@@ -3,6 +3,7 @@ import time
 from config import Priority
 from typing import Dict
 
+
 class Notification:
     def __init__(self, message_template: str, priority: Priority, channel: str,
                  recipient: str, template_data: Dict = None):
