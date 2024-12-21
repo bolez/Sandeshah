@@ -1,5 +1,5 @@
-from channel import Channel
-from notification.base import Notification
+from sandeshah.channel import Channel
+from sandeshah.notification.base import Notification
 
 class SMSChannel(Channel):
     def send(self, notification: Notification):

@@ -1,7 +1,7 @@
 from typing import Any
 
-from config import Priority
-from notification.base import Notification
+from sandeshah.config import Priority
+from sandeshah.notification.base import Notification
 
 
 class QueueManager:

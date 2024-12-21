@@ -1,11 +1,11 @@
 
 from typing import Dict
 
-from channel.email import EmailChannel
-from config import Priority
-from notification.base import Notification
-from notification.handler import NotificationHandler
-from queue.manager import QueueManager
+from sandeshah.channel.email import EmailChannel
+from sandeshah.config import Priority
+from sandeshah.notification.base import Notification
+from sandeshah.notification.handler import NotificationHandler
+from sandeshah.queue.manager import QueueManager
 
 
 class NotificationProcessor:

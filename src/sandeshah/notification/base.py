@@ -1,6 +1,6 @@
 
 import time
-from config import Priority
+from sandeshah.config import Priority
 from typing import Dict
 
 

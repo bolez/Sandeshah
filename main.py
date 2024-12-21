@@ -1,6 +1,12 @@
-from config import Priority
-from notification.processor import NotificationProcessor
-from queue.inmemory import InMemoryQueueManager
+import sys
+from pathlib import Path
+
+# Add the `src` directory to `sys.path`
+sys.path.append(str(Path(__file__).resolve().parent / "src"))
+
+from sandeshah.config import Priority
+from sandeshah.notification.processor import NotificationProcessor
+from sandeshah.queue.inmemory import InMemoryQueueManager
 
 queue_manager = InMemoryQueueManager()
 processor = NotificationProcessor(queue_manager, max_retries=2)

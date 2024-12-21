@@ -1,5 +1,5 @@
-from channel.manager import Channel
-from notification.base import Notification
+from sandeshah.channel.manager import Channel
+from sandeshah.notification.base import Notification
 
 
 class EmailChannel(Channel):

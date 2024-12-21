@@ -1,6 +1,6 @@
-from config import Priority
-from notification.base import Notification
-from queue.manager import QueueManager
+from sandeshah.config import Priority
+from sandeshah.notification.base import Notification
+from sandeshah.queue.manager import QueueManager
 
 
 class InMemoryQueueManager(QueueManager):

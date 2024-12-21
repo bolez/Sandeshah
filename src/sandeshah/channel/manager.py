@@ -1,4 +1,4 @@
-from notification.base import Notification
+from sandeshah.notification.base import Notification
 
 
 class Channel:
