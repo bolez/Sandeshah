@@ -26,6 +26,8 @@ class NotificationProcessor:
         for priority in [Priority.HIGH, Priority.MEDIUM, Priority.LOW]:
             while not self.queue_manager.is_empty(priority):
                 notification = self.queue_manager.dequeue(priority)
+                if not notification:
+                    continue
                 handler = self.handlers.get(notification.channel)
                 if handler:
                     handler.process(notification)
