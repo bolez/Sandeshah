@@ -1,7 +1,8 @@
 
 import time
-from sandeshah.config import Priority
 from typing import Dict
+
+from sandeshah.config import Priority
 
 
 class Notification:
